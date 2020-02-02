@@ -18,6 +18,7 @@ def main():
 
     fileObj = open(inputFilename)
     content = fileObj.read()
+    fileObj.close()
 
     print("%sing..." % (myMode.title()))
     #measure how long the encryption/decryption takes:
