@@ -29,6 +29,11 @@ def translate(word: str)-> str:
         return f"the word '{word}' does not exist, please double check it"
 
 def betterResult(word):
+    """
+    This function tries to produce a readable result to the user\
+    There is no other use for it. you can ignore it if you just\
+    want to use translate() function.
+    """
     processed = translate(word)
     counter = 1
     meanings = []
