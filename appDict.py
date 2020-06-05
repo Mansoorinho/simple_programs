@@ -28,5 +28,15 @@ def translate(word: str)-> str:
     else:
         return f"the word '{word}' does not exist, please double check it"
 
+def betterResult(word):
+    processed = translate(word)
+    counter = 1
+    meanings = []
+    for meaning in processed:
+        meanings.append(f"Definition {counter}: {meaning}")
+        counter += 1
+    return "\n".join(meanings)
+
+
 word = input("Enter a word: ")
-print(translate(word))
+print(betterResult(word))
