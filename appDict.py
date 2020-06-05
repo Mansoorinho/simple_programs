@@ -9,7 +9,7 @@ data = json.load(open("data.json","r"))
 
 def translate(word: str)-> str:
     """
-    This function get a word as an input and search for its meaning\
+    This function gets a word as an input and search for its meaning\
     if the word entered didn't exactly match to the dictionary\
     it looks for the closest match and asks user's opinion.
     """
@@ -24,7 +24,7 @@ def translate(word: str)-> str:
         elif UserAnswer == "N":
             return f"The word '{word} does not exist, please double check"
         else:
-            return "We didn't uderstand your query!"
+            return "We didn't uderstand your entry!"
     else:
         return f"the word '{word}' does not exist, please double check it"
 
